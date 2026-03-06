@@ -7,7 +7,7 @@ const projectsColumns = [
   {
     heading: "PROJECTS",
     links: [
-      { label: "Interiors", href: "#" },
+      { label: "Interiors", href: "/interiors" },
       { label: "Dog Kennels", href: "#" },
       { label: "Container Works", href: "#" },
       { label: "Constructions", href: "#" },
@@ -58,7 +58,7 @@ export function NavPopover({ type }: NavPopoverProps) {
                     href={link.href}
                     className="text-sm text-ink/60 hover:text-ink transition-colors"
                   >
-                    {link.sub ? `- ${link.label}` : link.label}
+                    {link.label}
                   </Link>
                 </li>
               ))}
