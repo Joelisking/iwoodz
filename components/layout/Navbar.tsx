@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { BookOpen, Phone, Menu, X, ChevronDown } from "lucide-react";
 import { NavPopover } from "./NavPopover";
@@ -8,55 +9,56 @@ import { NavPopover } from "./NavPopover";
 type ActivePopover = "projects" | "why" | null;
 
 const navLinks = [
-  { label: "PROJECTS", key: "projects" as const },
-  { label: "WHY iWOODZ CREATION", key: "why" as const },
-  { label: "SHOWROOM", key: null },
-  { label: "CONTACT", key: null },
+  { label: "PROJECTS", key: "projects" as const, href: null },
+  { label: "WHY iWOODZ CREATION", key: "why" as const, href: null },
+  { label: "SHOWROOM", key: null, href: "/showroom" },
+  { label: "CONTACT", key: null, href: "/contact" },
 ];
+
+const linkClass =
+  "flex items-center gap-1 text-xs uppercase tracking-[0.15em] text-white/80 hover:text-white transition-colors";
 
 export function Navbar() {
   const [activePopover, setActivePopover] = useState<ActivePopover>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleNavClick = (key: ActivePopover) => {
-    if (!key) { setActivePopover(null); return; }
     setActivePopover(activePopover === key ? null : key);
   };
 
   return (
     <>
-      {/* Overlay to close dropdowns on outside click */}
       {activePopover && (
-        <div
-          className="fixed inset-0 z-40"
-          onClick={() => setActivePopover(null)}
-        />
+        <div className="fixed inset-0 z-40" onClick={() => setActivePopover(null)} />
       )}
 
       <nav className="sticky top-0 z-50 bg-navbar">
-        {/* Main bar */}
         <div className="flex items-center justify-between px-8 h-16">
-          {/* Left: Nav links (desktop) */}
+          {/* Left: nav links */}
           <div className="hidden lg:flex items-center gap-6">
-            {navLinks.map((link) => (
-              <button
-                key={link.label}
-                onClick={() => handleNavClick(link.key)}
-                className="flex items-center gap-1 text-xs uppercase tracking-[0.15em] text-white/80 hover:text-white transition-colors"
-              >
-                {link.label}
-                {link.key && (
+            {navLinks.map((link) =>
+              link.href ? (
+                <Link key={link.label} href={link.href} className={linkClass}>
+                  {link.label}
+                </Link>
+              ) : (
+                <button
+                  key={link.label}
+                  onClick={() => handleNavClick(link.key)}
+                  className={linkClass}
+                >
+                  {link.label}
                   <ChevronDown
                     size={12}
                     className={`transition-transform ${activePopover === link.key ? "rotate-180" : ""}`}
                   />
-                )}
-              </button>
-            ))}
+                </button>
+              )
+            )}
           </div>
 
-          {/* Center: Logo */}
-          <div className="absolute left-1/2 -translate-x-1/2 text-center">
+          {/* Center: logo → home */}
+          <Link href="/" className="absolute left-1/2 -translate-x-1/2 text-center">
             <span
               className="font-serif text-base tracking-[0.35em] font-light text-white uppercase block"
               style={{ fontFamily: "var(--font-cormorant)" }}
@@ -64,26 +66,23 @@ export function Navbar() {
               iWOODZ CREATION
             </span>
             <div className="mt-1 mx-auto h-px w-14 bg-gold/60" />
-          </div>
+          </Link>
 
-          {/* Right: CTA + icons (desktop) */}
+          {/* Right: CTA + icons */}
           <div className="hidden lg:flex items-center gap-4">
-            <Button
-              variant="outline"
-              size="sm"
-              className="border-white/60 text-white bg-transparent hover:bg-white/10 hover:text-white uppercase tracking-[0.12em] text-xs"
-            >
-              REQUEST A CONSULTATION
+            <Button variant="outline" size="sm" asChild
+              className="border-white/60 text-white bg-transparent hover:bg-white/10 hover:text-white uppercase tracking-[0.12em] text-xs">
+              <Link href="/design-consultation">REQUEST A CONSULTATION</Link>
             </Button>
-            <button className="text-white/70 hover:text-white transition-colors" aria-label="Brochure">
+            <Link href="/brochure" className="text-white/70 hover:text-white transition-colors" aria-label="Brochure">
               <BookOpen size={18} />
-            </button>
-            <button className="text-white/70 hover:text-white transition-colors" aria-label="Call us">
+            </Link>
+            <a href="tel:+27000000000" className="text-white/70 hover:text-white transition-colors" aria-label="Call us">
               <Phone size={18} />
-            </button>
+            </a>
           </div>
 
-          {/* Mobile: hamburger */}
+          {/* Mobile hamburger */}
           <button
             className="lg:hidden text-white ml-auto"
             onClick={() => setMobileOpen(!mobileOpen)}
@@ -103,14 +102,24 @@ export function Navbar() {
         {/* Mobile menu */}
         {mobileOpen && (
           <div className="lg:hidden bg-navbar border-t border-white/10 px-6 py-4 space-y-3">
-            {navLinks.map((link) => (
-              <a key={link.label} href="#" className="block text-xs uppercase tracking-[0.15em] text-white/80 hover:text-white py-1">
-                {link.label}
-              </a>
-            ))}
+            {navLinks.map((link) =>
+              link.href ? (
+                <Link key={link.label} href={link.href}
+                  className="block text-xs uppercase tracking-[0.15em] text-white/80 hover:text-white py-1">
+                  {link.label}
+                </Link>
+              ) : (
+                <button key={link.label}
+                  onClick={() => handleNavClick(link.key)}
+                  className="block text-xs uppercase tracking-[0.15em] text-white/80 hover:text-white py-1 w-full text-left">
+                  {link.label}
+                </button>
+              )
+            )}
             <div className="pt-2">
-              <Button variant="outline" size="sm" className="border-white/60 text-white bg-transparent hover:bg-white/10 hover:text-white uppercase tracking-[0.12em] text-xs w-full">
-                REQUEST A CONSULTATION
+              <Button variant="outline" size="sm" asChild
+                className="border-white/60 text-white bg-transparent hover:bg-white/10 hover:text-white uppercase tracking-[0.12em] text-xs w-full">
+                <Link href="/design-consultation">REQUEST A CONSULTATION</Link>
               </Button>
             </div>
           </div>

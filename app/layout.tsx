@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
+import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -25,7 +28,12 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        <AnnouncementBar />
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+iwoodz-brochure-page-guide.md
+
+iwoodz-design-consultation-page-guide.md
+iwoodz-showroom-page-guide.md
+iwoodz-contact-page-guide.md

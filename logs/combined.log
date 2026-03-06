@@ -1,1 +1,2 @@
 {"config":{"logLevel":"info","nodeVersion":"v25.3.0","platform":"darwin","serverName":"react-native-mcp-server"},"level":"info","logLevel":"info","message":"MCP Server starting","nodeVersion":"v25.3.0","platform":"darwin","timestamp":"2026-03-05 00:27:44","version":"1.1.0"}
+{"config":{"logLevel":"info","nodeVersion":"v25.3.0","platform":"darwin","serverName":"react-native-mcp-server"},"level":"info","logLevel":"info","message":"MCP Server starting","nodeVersion":"v25.3.0","platform":"darwin","timestamp":"2026-03-05 19:09:49","version":"1.1.0"}

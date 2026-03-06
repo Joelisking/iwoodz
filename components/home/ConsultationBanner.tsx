@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export function ConsultationBanner() {
@@ -31,11 +32,9 @@ export function ConsultationBanner() {
             understand your vision and explore how iWoodz Creation can bring it
             to life — from first sketch to final installation.
           </p>
-          <Button
-            variant="outline"
-            className="border-white text-white bg-transparent hover:bg-white hover:text-ink uppercase tracking-[0.18em] text-xs px-8 h-12"
-          >
-            ARRANGE A DESIGN CONSULTATION
+          <Button variant="outline" asChild
+            className="border-white text-white bg-transparent hover:bg-white hover:text-ink uppercase tracking-[0.18em] text-xs px-8 h-12">
+            <Link href="/design-consultation">ARRANGE A DESIGN CONSULTATION</Link>
           </Button>
         </div>
       </div>

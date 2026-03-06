@@ -4,7 +4,7 @@ export function AnnouncementBar() {
       <p className="text-xs text-white tracking-widest">
         MARCH OPEN DAY : ACCRA.{" "}
         <a
-          href="#"
+          href="/contact"
           className="underline underline-offset-2 hover:text-gold transition-colors"
         >
           book now
