@@ -32,7 +32,7 @@ export function Navbar() {
         <div className="fixed inset-0 z-40" onClick={() => setActivePopover(null)} />
       )}
 
-      <nav className="sticky top-0 z-50 bg-navbar">
+      <nav className="sticky top-0 z-50 bg-navbar relative">
         <div className="flex items-center justify-between px-8 h-16">
           {/* Left: nav links */}
           <div className="hidden lg:flex items-center gap-6">
@@ -77,7 +77,7 @@ export function Navbar() {
             <Link href="/brochure" className="text-white/70 hover:text-white transition-colors" aria-label="Brochure">
               <BookOpen size={18} />
             </Link>
-            <a href="tel:+27000000000" className="text-white/70 hover:text-white transition-colors" aria-label="Call us">
+            <a href="tel:+233000000000" className="text-white/70 hover:text-white transition-colors" aria-label="Call us">
               <Phone size={18} />
             </a>
           </div>
@@ -92,9 +92,9 @@ export function Navbar() {
           </button>
         </div>
 
-        {/* Dropdown panel */}
+        {/* Dropdown panel — left-aligned, auto-width */}
         {activePopover && (
-          <div className="relative z-50">
+          <div className="absolute left-8 top-full z-50">
             <NavPopover type={activePopover} />
           </div>
         )}

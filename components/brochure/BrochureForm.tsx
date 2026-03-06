@@ -19,7 +19,7 @@ const schema = z.object({
   postcode: z.string().min(1, "Required"),
   contactNumber: z.string().min(1, "Required"),
   email: z.string().email("Invalid email address"),
-  discussProject: z.enum(["yes", "no"], { required_error: "Please select an option" }),
+  discussProject: z.enum(["yes", "no"] as const, { error: "Please select an option" }),
 });
 
 type FormValues = z.infer<typeof schema>;

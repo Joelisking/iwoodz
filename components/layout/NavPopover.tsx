@@ -1,45 +1,37 @@
-import { Separator } from "@/components/ui/separator";
+import Link from "next/link";
+import { InstagramIcon } from "@/components/shared/icons/InstagramIcon";
+import { TikTokIcon } from "@/components/shared/icons/TikTokIcon";
+import { FacebookIcon } from "@/components/shared/icons/FacebookIcon";
 
 const projectsColumns = [
   {
-    heading: "INTERIORS",
-    links: ["Kitchens", "Living Spaces", "Wardrobes & Storage"],
-  },
-  {
-    heading: "DOG KENNELS",
-    links: ["Single Kennel", "Double Kennel", "Feeding Dishes"],
-  },
-  {
-    heading: "CONTAINER WORKS",
+    heading: "PROJECTS",
     links: [
-      "Explore all container works",
-      "Layout Planning",
-      "Windows & Doors",
-      "Roofing & Exterior",
-      "Electrical & Plumbing",
-      "Finishing Touches",
+      { label: "Interiors", href: "#" },
+      { label: "Dog Kennels", href: "#" },
+      { label: "Container Works", href: "#" },
+      { label: "Constructions", href: "#" },
+      { label: "Other Projects", href: "#" },
     ],
-  },
-  {
-    heading: "CONSTRUCTIONS",
-    links: ["Explore all constructions", "Villa D'Tuger"],
-  },
-  {
-    heading: "OTHER PROJECTS",
-    links: ["Pergola", "Hand-Wash Stations"],
   },
 ];
 
 const whyColumns = [
   {
-    heading: "WHY iWOODZ CREATION",
+    heading: "WHY iWOODZ CREATION?",
     links: [
-      "Why choose us?",
-      "Our design service",
-      "Our installation service",
-      "Our construction service",
+      { label: "Why Choose Us?", href: "/why-iwoodz" },
+      { label: "Our Design Service", href: "/why-iwoodz" },
+      { label: "Our Installation Service", href: "/why-iwoodz" },
+      { label: "Our Construction Service", href: "/why-iwoodz" },
     ],
   },
+];
+
+const journeyLinks = [
+  { label: "Our Brochure", href: "/brochure" },
+  { label: "Design Consultation", href: "/design-consultation" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 interface NavPopoverProps {
@@ -50,34 +42,82 @@ export function NavPopover({ type }: NavPopoverProps) {
   const columns = type === "projects" ? projectsColumns : whyColumns;
 
   return (
-    <div className="bg-linen border-t border-gold/20 shadow-lg">
-      <div className="max-w-7xl mx-auto px-8 py-10">
-        <div
-          className="grid gap-8"
-          style={{ gridTemplateColumns: `repeat(${columns.length}, minmax(0, 1fr))` }}
+    <div className="bg-linen shadow-2xl border-t-2 border-gold/30 flex">
+      {/* Main link columns */}
+      <div className="flex gap-10 px-10 py-8">
+        {columns.map((col) => (
+          <div key={col.heading} className="min-w-[155px]">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-ink mb-3">
+              {col.heading}
+            </p>
+            <div className="h-px bg-ink/12 mb-3" />
+            <ul className="space-y-2">
+              {col.links.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-ink/60 hover:text-ink transition-colors"
+                  >
+                    {link.sub ? `- ${link.label}` : link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+
+      {/* Vertical divider */}
+      <div className="w-px bg-ink/10 my-5" />
+
+      {/* Start Your Journey column */}
+      <div className="px-8 py-8 min-w-[185px]">
+        <p
+          className="italic text-ink/40 mb-3"
+          style={{ fontFamily: "var(--font-cormorant)", fontSize: "1.05rem" }}
         >
-          {columns.map((col) => (
-            <div key={col.heading}>
-              <p className="text-xs uppercase tracking-[0.2em] text-ink font-semibold mb-4">
-                {col.heading}
-              </p>
-              <Separator className="mb-4 bg-gold/30" />
-              <ul className="space-y-2">
-                {col.links.map((link) => (
-                  <li key={link}>
-                    <a
-                      href="#"
-                      className="text-sm text-ink/70 hover:text-ink hover:translate-x-1 transition-all inline-block"
-                    >
-                      {link}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          Start Your Journey
+        </p>
+        <div className="h-px bg-ink/12 mb-3" />
+        <ul className="space-y-2 mb-7">
+          {journeyLinks.map((link) => (
+            <li key={link.label}>
+              <Link
+                href={link.href}
+                className="text-sm text-ink/60 hover:text-ink transition-colors"
+              >
+                {link.label}
+              </Link>
+            </li>
           ))}
+        </ul>
+        <div className="flex gap-3 text-ink/35">
+          <a href="#" className="hover:text-ink transition-colors" aria-label="Instagram">
+            <InstagramIcon className="w-4 h-4" />
+          </a>
+          <a href="#" className="hover:text-ink transition-colors" aria-label="TikTok">
+            <TikTokIcon className="w-4 h-4" />
+          </a>
+          <a href="#" className="hover:text-ink transition-colors" aria-label="Facebook">
+            <FacebookIcon className="w-4 h-4" />
+          </a>
         </div>
       </div>
+
+      {/* Image panel — projects dropdown only */}
+      {type === "projects" && (
+        <>
+          <div className="w-px bg-ink/10 my-5" />
+          <div className="w-44 shrink-0 overflow-hidden">
+            {/* Replace with real project image */}
+            <img
+              src="https://picsum.photos/seed/nav-projects/300/400"
+              alt="iWoodz Creation projects"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </>
+      )}
     </div>
   );
 }
