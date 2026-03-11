@@ -23,7 +23,7 @@ export function WhyConsultationCTA() {
           <p className="text-sm text-ink/60 leading-relaxed mb-8">
             Start your iWoodz journey with a complimentary, no-obligation design
             consultation. Our expert designers will work with you to bring your
-            vision to life — creating a bespoke result perfectly tailored to your
+            vision to life — creating results perfectly tailored to your
             lifestyle and aspirations.
           </p>
           <Button

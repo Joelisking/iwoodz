@@ -12,7 +12,7 @@ const introImages = [
     src: "https://picsum.photos/seed/living-portrait/600/800",
     title: "Living Spaces",
     description:
-      "Bespoke joinery and fitted furniture that transforms any living area into something truly yours.",
+      "Wood joinery and fitted furniture that transforms any living area into something truly yours.",
   },
 ];
 
@@ -29,11 +29,11 @@ export function IntroSection() {
             className="font-serif text-4xl md:text-5xl text-ink font-light mb-6"
             style={{ fontFamily: "var(--font-cormorant)" }}
           >
-            Bespoke Interiors & Builds
+            Wood Interiors & Builds
           </h2>
           <p className="text-ink/65 text-base leading-relaxed max-w-2xl mx-auto">
             At iWoodz Creation, every project begins with a conversation. We
-            design and build bespoke interiors and structures — from fitted
+            design and build wood interiors and structures — from fitted
             kitchens and wardrobes to container works and constructions — with
             craftsmanship and attention to detail at the heart of everything we
             do.

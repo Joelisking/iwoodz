@@ -33,9 +33,9 @@ export function WhyProjectsSection() {
           Our Projects
         </h2>
         <p className="text-sm text-ink/60 leading-relaxed mb-8">
-          From handcrafted kitchens and bespoke wardrobes to ambitious container
-          conversions and architectural constructions — every iWoodz project is
-          designed with the same commitment to quality and lasting beauty.
+          From handcrafted wood works to ambitious container conversions and
+          architectural constructions — every iWoodz project is designed with
+          the same commitment to quality and lasting beauty.
         </p>
         <Button
           asChild

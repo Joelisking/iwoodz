@@ -59,7 +59,7 @@ export function HeroCarousel() {
       {/* Static text overlay */}
       <div className="absolute bottom-20 left-8 md:left-16 z-10 max-w-lg">
         <p className="text-xs uppercase tracking-[0.25em] text-white/70 mb-3">
-          BESPOKE WOODWORK
+          WOODWORK
         </p>
         <h1
           className="font-serif text-4xl md:text-6xl text-white font-light leading-tight mb-5"
@@ -70,7 +70,7 @@ export function HeroCarousel() {
           Every Space
         </h1>
         <p className="text-white/75 text-sm md:text-base max-w-sm mb-8 leading-relaxed">
-          From bespoke kitchens to container builds, iWoodz Creation brings
+          From wood kitchens to container builds, iWoodz Creation brings
           your vision to life.
         </p>
         <Button

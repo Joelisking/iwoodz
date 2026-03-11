@@ -11,7 +11,7 @@ const details = [
   {
     icon: Clock,
     label: "Opening Hours",
-    lines: ["Monday – Friday, 9am – 5pm", "Saturday by appointment"],
+    lines: ["Monday – Saturday, 8am – 5pm"],
   },
   {
     icon: Phone,
@@ -51,7 +51,7 @@ export function ShowroomInfo() {
               fontSize: "clamp(2.4rem, 5vw, 4.5rem)",
             }}
           >
-            Experience Bespoke<br />in Person
+            Experience iWoodz<br />in Person
           </h2>
 
           <p className="text-ink/55 text-sm leading-relaxed mb-10 max-w-md">

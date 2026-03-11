@@ -6,7 +6,7 @@ const cards = [
     src: "https://picsum.photos/seed/design-service/600/400",
     title: "Our Design Service",
     description:
-      "Every build starts with a bespoke design process. We listen, sketch, and refine until the vision is exactly right.",
+      "Every build starts with a design process. We listen, sketch, and refine until the vision is exactly right.",
   },
   {
     src: "https://picsum.photos/seed/craftsmanship/600/400",
@@ -16,7 +16,7 @@ const cards = [
   },
   {
     src: "https://picsum.photos/seed/bespoke-details/600/400",
-    title: "Bespoke Details",
+    title: "Wood Works",
     description:
       "From custom hardware to hand-applied finishes, every detail is considered and crafted with care.",
   },

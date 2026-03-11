@@ -18,7 +18,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "iWoodz Creation — Bespoke Woodwork & Builds",
+  title: "iWoodz Creation — Woodwork & Builds",
   description:
     "From bespoke kitchens to container builds, iWoodz Creation brings your vision to life.",
 };

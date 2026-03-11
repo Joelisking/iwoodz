@@ -16,7 +16,7 @@ export function BroctureCTAPanel() {
             </h2>
             <p className="text-ink/60 text-sm leading-relaxed mb-8 max-w-xs mx-auto lg:mx-0">
               See our work up close. Visit the iWoodz Creation showroom and explore our
-              full range of materials, finishes, and bespoke designs in person.
+              full range of materials, finishes, and wood works in person.
             </p>
             <Button variant="outline" asChild
               className="border-ink/50 text-ink bg-transparent hover:bg-ink hover:text-white uppercase tracking-[0.18em] text-xs px-8 h-11">

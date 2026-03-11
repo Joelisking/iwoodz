@@ -39,7 +39,7 @@ export default function WhyIwoodzPage() {
 
       <WhyFeatureBlock
         eyebrow="Tailored to You"
-        heading="Bespoke Designs"
+        heading="Wood Designs"
         body="From contemporary interiors to custom container works and ambitious constructions — every project is designed entirely around your lifestyle, your space, and your aspirations. No two projects are ever the same."
         buttonLabel="Explore All Projects"
         buttonHref="#"

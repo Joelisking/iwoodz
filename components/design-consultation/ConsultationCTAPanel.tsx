@@ -37,7 +37,7 @@ export function ConsultationCTAPanel() {
             </h2>
             <p className="text-ink/60 text-sm leading-relaxed mb-8 max-w-xs mx-auto lg:ml-auto lg:mr-0">
               See our work up close. Visit the iWoodz Creation showroom and experience
-              our bespoke craftsmanship in person.
+              our wood craftsmanship in person.
             </p>
             <Button variant="outline" asChild
               className="border-ink/50 text-ink bg-transparent hover:bg-ink hover:text-white uppercase tracking-[0.18em] text-xs px-8 h-11">

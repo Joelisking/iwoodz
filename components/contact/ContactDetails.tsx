@@ -12,7 +12,7 @@ export function ContactDetails() {
       >
         Head Office
       </h2>
-      <p className="text-ink/50 text-sm mb-8">Open Monday – Friday, 9am – 5pm</p>
+      <p className="text-ink/50 text-sm mb-8">Open Monday – Saturday, 8am – 5pm</p>
 
       <div className="space-y-6">
         <div>

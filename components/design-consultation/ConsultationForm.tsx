@@ -63,7 +63,7 @@ export function ConsultationForm() {
         </h1>
         <p className="text-ink/60 text-sm leading-relaxed mb-4">
           Our design consultations are completely free of charge and of no-obligation; providing you
-          with the opportunity to discuss your ideas and receive expert advice on your bespoke project design.
+          with the opportunity to discuss your ideas and receive expert advice on your project design.
         </p>
         <p className="text-ink/60 text-sm leading-relaxed mb-10">
           To speak to one of our expert designers about your project, please fill in your details below.

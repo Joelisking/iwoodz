@@ -1,22 +1,29 @@
+"use client";
+
+import { useState, useEffect } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+
 const galleryItems = [
-  {
-    seed: "showroom-gallery-1",
-    label: "Handcrafted Kitchens",
-    aspect: "aspect-3/4",
-  },
-  {
-    seed: "showroom-gallery-2",
-    label: "Bespoke Storage",
-    aspect: "aspect-3/4",
-  },
-  {
-    seed: "showroom-gallery-3",
-    label: "Living Spaces",
-    aspect: "aspect-3/4",
-  },
+  { seed: "showroom-gallery-1" },
+  { seed: "showroom-gallery-2" },
+  { seed: "showroom-gallery-3" },
 ];
 
+const N = galleryItems.length;
+
 export function ShowroomGallery() {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((i) => (i + 1) % N);
+    }, 4000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const prev = () => setCurrent((i) => (i - 1 + N) % N);
+  const next = () => setCurrent((i) => (i + 1) % N);
+
   return (
     <section className="bg-ink px-4 py-4">
       {/* Section label */}
@@ -28,26 +35,54 @@ export function ShowroomGallery() {
         <div className="h-px flex-1 bg-white/10" />
       </div>
 
-      {/* Three-column editorial grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-1">
-        {galleryItems.map(({ seed, label, aspect }) => (
-          <div key={seed} className="relative group overflow-hidden">
-            <img
-              src={`https://picsum.photos/seed/${seed}/800/1000`}
-              alt={`${label} — replace with real showroom photo`}
-              className={`w-full ${aspect} object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]`}
-            />
-            {/* Hover reveal overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
-              <div>
-                <div className="h-px w-8 bg-gold mb-3 translate-x-[-8px] group-hover:translate-x-0 transition-transform duration-500" />
-                <p className="text-white text-xs tracking-[0.3em] uppercase translate-y-2 group-hover:translate-y-0 transition-transform duration-500 opacity-0 group-hover:opacity-100">
-                  {label}
-                </p>
-              </div>
+      {/* Carousel */}
+      <div className="relative overflow-hidden">
+        <div
+          className="flex transition-transform duration-500 ease-in-out"
+          style={{ transform: `translateX(-${current * 100}%)` }}
+        >
+          {galleryItems.map(({ seed }) => (
+            <div key={seed} className="w-full shrink-0">
+              <img
+                src={`https://picsum.photos/seed/${seed}/1600/900`}
+                alt="iWoodz Creation showroom — replace with real photo"
+                className="w-full aspect-video object-cover"
+              />
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+
+        {/* Left arrow */}
+        <button
+          onClick={prev}
+          className="absolute left-3 top-1/2 -translate-y-1/2 text-white/50 hover:text-white transition-colors p-2"
+          aria-label="Previous image"
+        >
+          <ChevronLeft size={28} />
+        </button>
+
+        {/* Right arrow */}
+        <button
+          onClick={next}
+          className="absolute right-3 top-1/2 -translate-y-1/2 text-white/50 hover:text-white transition-colors p-2"
+          aria-label="Next image"
+        >
+          <ChevronRight size={28} />
+        </button>
+
+        {/* Dot indicators */}
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+          {galleryItems.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setCurrent(i)}
+              aria-label={`Go to image ${i + 1}`}
+              className={`h-1 rounded-full transition-all duration-300 ${
+                i === current ? "w-6 bg-white" : "w-1.5 bg-white/35"
+              }`}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

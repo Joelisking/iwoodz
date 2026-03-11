@@ -43,7 +43,7 @@ export function ContactProjectsSection() {
             Our Projects
           </h2>
           <p className="text-ink/60 text-sm leading-relaxed max-w-2xl mx-auto mb-8">
-            From bespoke kitchen interiors to full container conversions and custom constructions,
+            From kitchen interiors to full container conversions and custom constructions,
             every iWoodz Creation project is built with precision, passion, and an unwavering
             commitment to quality.
           </p>
