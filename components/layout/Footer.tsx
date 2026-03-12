@@ -85,7 +85,7 @@ export function Footer() {
           <div className="hidden lg:block">
             <p className="font-serif text-2xl text-white/20 leading-snug italic"
               style={{ fontFamily: "var(--font-cormorant)" }}>
-              "Innovative Works."
+              "innovative woodworks."
             </p>
           </div>
         </div>
