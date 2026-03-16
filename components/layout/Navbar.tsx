@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { BookOpen, Phone, Menu, X, ChevronDown } from "lucide-react";
 import { NavPopover } from "./NavPopover";
 
@@ -68,12 +67,8 @@ export function Navbar() {
             <div className="mt-1 mx-auto h-px w-14 bg-gold/60" />
           </Link>
 
-          {/* Right: CTA + icons */}
+          {/* Right: icons */}
           <div className="hidden lg:flex items-center gap-4">
-            <Button variant="outline" size="sm" asChild
-              className="border-white/60 text-white bg-transparent hover:bg-white/10 hover:text-white uppercase tracking-[0.12em] text-xs">
-              <Link href="/design-consultation">REQUEST A CONSULTATION</Link>
-            </Button>
             <Link href="/brochure" className="text-white/70 hover:text-white transition-colors" aria-label="Brochure">
               <BookOpen size={18} />
             </Link>
@@ -102,26 +97,16 @@ export function Navbar() {
         {/* Mobile menu */}
         {mobileOpen && (
           <div className="lg:hidden bg-navbar border-t border-white/10 px-6 py-4 space-y-3">
-            {navLinks.map((link) =>
-              link.href ? (
-                <Link key={link.label} href={link.href}
+            {navLinks.map((link) => {
+              const mobileHref = link.href ?? (link.key === "projects" ? "/interiors" : "/why-iwoodz");
+              return (
+                <Link key={link.label} href={mobileHref}
+                  onClick={() => setMobileOpen(false)}
                   className="block text-xs uppercase tracking-[0.15em] text-white/80 hover:text-white py-1">
                   {link.label}
                 </Link>
-              ) : (
-                <button key={link.label}
-                  onClick={() => handleNavClick(link.key)}
-                  className="block text-xs uppercase tracking-[0.15em] text-white/80 hover:text-white py-1 w-full text-left">
-                  {link.label}
-                </button>
-              )
-            )}
-            <div className="pt-2">
-              <Button variant="outline" size="sm" asChild
-                className="border-white/60 text-white bg-transparent hover:bg-white/10 hover:text-white uppercase tracking-[0.12em] text-xs w-full">
-                <Link href="/design-consultation">REQUEST A CONSULTATION</Link>
-              </Button>
-            </div>
+              );
+            })}
           </div>
         )}
       </nav>

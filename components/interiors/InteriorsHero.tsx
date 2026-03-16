@@ -11,7 +11,7 @@ export function InteriorsHero() {
   }, []);
 
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative h-[calc(100vh-100px)] w-full overflow-hidden">
       {/* Background image — replace with real interiors photo */}
       <img
         src="https://picsum.photos/seed/interiors-hero/1920/1080"

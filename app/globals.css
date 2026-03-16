@@ -132,5 +132,6 @@
     background-color: #F4F1EC;
     color: #1A1A1A;
     font-family: var(--font-sans), sans-serif;
+    overflow-x: hidden;
   }
 }

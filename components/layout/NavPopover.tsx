@@ -8,10 +8,11 @@ const projectsColumns = [
     heading: "PROJECTS",
     links: [
       { label: "Interiors", href: "/interiors" },
-      { label: "Dog Kennels", href: "#" },
-      { label: "Container Works", href: "#" },
-      { label: "Constructions", href: "#" },
-      { label: "Other Projects", href: "#" },
+      { label: "Dog Kennels", href: "/order/kennels" },
+      { label: "Handwash Stations", href: "/order/handwash-station" },
+      { label: "Container Works", href: "/projects/container-works" },
+      { label: "Constructions", href: "/projects/constructions" },
+      { label: "Other Projects", href: "/projects/other-projects" },
     ],
   },
 ];
@@ -21,9 +22,9 @@ const whyColumns = [
     heading: "WHY iWOODZ CREATION?",
     links: [
       { label: "Why Choose Us?", href: "/why-iwoodz" },
-      { label: "Our Design Service", href: "/why-iwoodz" },
-      { label: "Our Installation Service", href: "/why-iwoodz" },
-      { label: "Our Construction Service", href: "/why-iwoodz" },
+      { label: "Our Design Service", href: "/services/design" },
+      { label: "Our Installation Service", href: "/services/installation" },
+      { label: "Our Construction Service", href: "/services/construction" },
     ],
   },
 ];
