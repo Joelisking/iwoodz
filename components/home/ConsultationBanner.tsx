@@ -23,14 +23,15 @@ export function ConsultationBanner() {
             className="font-serif text-4xl md:text-5xl text-white font-light leading-tight mb-5"
             style={{ fontFamily: "var(--font-cormorant)" }}
           >
-            Arrange A Design
+            Book A Design
             <br />
             Consultation
           </h2>
           <p className="text-white/65 text-sm leading-relaxed mb-8 max-w-md">
-            Our design team offers a free, no-obligation consultation to
-            understand your vision and explore how iWoodz Creation can bring it
-            to life — from first sketch to final installation.
+            Our design team visits your site to understand your vision, take
+            measurements, and prepare a detailed proposal. A retainer fee
+            applies — deducted in full from the final project cost upon
+            agreement.
           </p>
           <Button variant="outline" asChild
             className="border-white text-white bg-transparent hover:bg-white hover:text-ink uppercase tracking-[0.18em] text-xs px-8 h-12">

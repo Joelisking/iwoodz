@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { InstagramIcon } from "@/components/shared/icons/InstagramIcon";
 import { TikTokIcon } from "@/components/shared/icons/TikTokIcon";
@@ -6,12 +7,13 @@ import { FacebookIcon } from "@/components/shared/icons/FacebookIcon";
 export interface InspirationCard {
   src: string;
   label: string;
+  href?: string;
 }
 
 const DEFAULT_CARDS: InspirationCard[] = [
-  { src: "/villa%20d_tuger/DJI_0214.JPG", label: "OUR PROJECTS" },
-  { src: "/wardrope/IMG_5283.JPG", label: "OUR WOOD WORKS" },
-  { src: "/Pergola/IMG_4850.JPEG", label: "OUR SERVICES" },
+  { src: "/villa%20d_tuger/DJI_0214.JPG", label: "OUR PROJECTS", href: "/projects/container-works" },
+  { src: "/wardrope/IMG_5283.JPG", label: "OUR WOOD WORKS", href: "/interiors" },
+  { src: "/Pergola/IMG_4850.JPEG", label: "OUR SERVICES", href: "/services/design" },
 ];
 
 interface InspirationGridProps {
@@ -31,9 +33,9 @@ export function InspirationGrid({ cards = DEFAULT_CARDS }: InspirationGridProps)
         <div className="flex items-center gap-4 mb-10">
           <p className="text-xs uppercase tracking-[0.2em] text-ink/50">FOLLOW US</p>
           <div className="flex gap-3 text-ink/50">
-            <a href="#" className="hover:text-gold transition-colors" aria-label="Facebook"><FacebookIcon className="w-4 h-4" /></a>
-            <a href="#" className="hover:text-gold transition-colors" aria-label="Instagram"><InstagramIcon className="w-4 h-4" /></a>
-            <a href="#" className="hover:text-gold transition-colors" aria-label="TikTok"><TikTokIcon className="w-4 h-4" /></a>
+            <a href="https://www.facebook.com/iwoodzcreation" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors" aria-label="Facebook"><FacebookIcon className="w-4 h-4" /></a>
+            <a href="https://www.instagram.com/iwoodzcreation" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors" aria-label="Instagram"><InstagramIcon className="w-4 h-4" /></a>
+            <a href="https://www.tiktok.com/@iwoodzcreation" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors" aria-label="TikTok"><TikTokIcon className="w-4 h-4" /></a>
           </div>
         </div>
 
@@ -41,7 +43,6 @@ export function InspirationGrid({ cards = DEFAULT_CARDS }: InspirationGridProps)
           {cards.map((card) => (
             <div key={card.label} className="group">
               <div className="overflow-hidden mb-4">
-                {/* Replace with real assets */}
                 <img
                   src={card.src}
                   alt={card.label}
@@ -49,10 +50,11 @@ export function InspirationGrid({ cards = DEFAULT_CARDS }: InspirationGridProps)
                 />
               </div>
               <Button
+                asChild
                 variant="outline"
                 className="border-ink/40 text-ink bg-transparent hover:bg-ink hover:text-white uppercase tracking-[0.18em] text-xs w-full h-10"
               >
-                {card.label}
+                {card.href ? <Link href={card.href}>{card.label}</Link> : <span>{card.label}</span>}
               </Button>
             </div>
           ))}

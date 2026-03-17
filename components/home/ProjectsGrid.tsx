@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 
@@ -6,18 +7,21 @@ const mainProjects = [
   {
     src: "/New%20Batch%20/IMG_0883.jpg",
     title: "Container Works",
+    href: "/projects/container-works",
     description:
       "Innovative container conversions — from layout planning and windows to full interior finishing.",
   },
   {
     src: "/villa%20d_tuger/DJI_0214.JPG",
     title: "Constructions",
+    href: "/projects/constructions",
     description:
       "Full-scale construction projects including villas, outbuildings, and custom structures.",
   },
   {
     src: "/wardrope/IMG_5292.JPG",
     title: "Interiors",
+    href: "/interiors",
     description:
       "Bespoke fitted kitchens, living spaces, and wardrobes crafted with precision and care.",
   },
@@ -25,14 +29,16 @@ const mainProjects = [
 
 const secondaryProjects = [
   {
-    src: "https://picsum.photos/seed/dog-kennels/600/750",
+    src: "/Kennel_new/ba7aab6e-8226-4391-b101-791a51bf3112%202.JPG",
     title: "Dog Kennels",
+    href: "/order/kennels",
     description:
       "Single and double kennels built to the highest standard — comfortable and durable.",
   },
   {
     src: "/Pergola/IMG_4850.JPEG",
     title: "Other Projects",
+    href: "/projects/other-projects",
     description:
       "Pergolas, hand-wash stations, and more — no project is too unique.",
   },
@@ -41,16 +47,17 @@ const secondaryProjects = [
 function ProjectCard({
   src,
   title,
+  href,
   description,
 }: {
   src: string;
   title: string;
+  href: string;
   description: string;
 }) {
   return (
     <div className="group">
       <div className="overflow-hidden mb-5">
-        {/* Replace with <Image> from next/image + real assets */}
         <img
           src={src}
           alt={title}
@@ -65,10 +72,11 @@ function ProjectCard({
       </h3>
       <p className="text-ink/60 text-sm leading-relaxed mb-5">{description}</p>
       <Button
+        asChild
         variant="outline"
         className="border-ink/40 text-ink bg-transparent hover:bg-ink hover:text-white uppercase tracking-[0.18em] text-xs px-6 h-10"
       >
-        EXPLORE {title.toUpperCase()}
+        <Link href={href}>EXPLORE {title.toUpperCase()}</Link>
       </Button>
     </div>
   );

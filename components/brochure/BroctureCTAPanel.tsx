@@ -34,11 +34,12 @@ export function BroctureCTAPanel() {
             <p className="text-xs uppercase tracking-[0.25em] text-ink/50 mb-4">DESIGN YOUR SPACE</p>
             <h2 className="font-serif text-3xl md:text-4xl text-ink font-light mb-4 leading-tight"
               style={{ fontFamily: "var(--font-cormorant)" }}>
-              Free Design Consultation
+              Book A Design Consultation
             </h2>
             <p className="text-ink/60 text-sm leading-relaxed mb-8 max-w-xs mx-auto lg:ml-auto lg:mr-0">
-              Meet with one of our expert designers to explore your project and
-              receive a personalised proposal — completely free.
+              Our designers visit your site, take measurements, and prepare a
+              detailed proposal. A retainer fee applies — deducted from the
+              final project cost upon agreement.
             </p>
             <Button variant="outline" asChild
               className="border-ink/50 text-ink bg-transparent hover:bg-ink hover:text-white uppercase tracking-[0.18em] text-xs px-8 h-11">

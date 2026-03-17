@@ -5,9 +5,9 @@ import { TikTokIcon } from "@/components/shared/icons/TikTokIcon";
 import { FacebookIcon } from "@/components/shared/icons/FacebookIcon";
 
 const navLinks = [
-  { label: "PROJECTS", href: "#" },
+  { label: "PROJECTS", href: "/projects/container-works" },
   { label: "SHOWROOM", href: "/showroom" },
-  { label: "WHY iWOODZ CREATION", href: "#" },
+  { label: "WHY iWOODZ CREATION", href: "/why-iwoodz" },
   { label: "DESIGN CONSULTATION", href: "/design-consultation" },
   { label: "BROCHURE REQUEST", href: "/brochure" },
 ];
@@ -34,22 +34,28 @@ export function Footer() {
             </Link>
             <div className="h-px w-12 bg-gold/60 mb-6" />
             <address className="not-italic text-sm text-white/60 space-y-1 leading-relaxed mb-6">
-              <p>Accra, Ghana</p>
+              <p>Nii Sodza St, Ogbodjo</p>
+              <p>Madina, Accra, Ghana</p>
               <p className="mt-3">
-                <a href="mailto:hello@iwoodz.com" className="hover:text-gold transition-colors">
-                  hello@iwoodz.com
+                <a href="mailto:iwoodzcreation@gmail.com" className="hover:text-gold transition-colors">
+                  iwoodzcreation@gmail.com
                 </a>
               </p>
               <p>
-                <a href="tel:+233000000000" className="hover:text-gold transition-colors">
-                  +233 (0) 00 000 0000
+                <a href="tel:+233243519595" className="hover:text-gold transition-colors">
+                  +233 243 51 9595
+                </a>
+              </p>
+              <p>
+                <a href="tel:+233200997333" className="hover:text-gold transition-colors">
+                  +233 200 997 333
                 </a>
               </p>
             </address>
             <div className="flex gap-4 text-white/50">
-              <a href="#" className="hover:text-gold transition-colors" aria-label="Instagram"><InstagramIcon /></a>
-              <a href="#" className="hover:text-gold transition-colors" aria-label="TikTok"><TikTokIcon /></a>
-              <a href="#" className="hover:text-gold transition-colors" aria-label="Facebook"><FacebookIcon /></a>
+              <a href="https://www.instagram.com/iwoodzcreation" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors" aria-label="Instagram"><InstagramIcon /></a>
+              <a href="https://www.tiktok.com/@iwoodzcreation" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors" aria-label="TikTok"><TikTokIcon /></a>
+              <a href="https://www.facebook.com/iwoodzcreation" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors" aria-label="Facebook"><FacebookIcon /></a>
             </div>
           </div>
 

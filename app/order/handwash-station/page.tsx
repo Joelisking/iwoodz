@@ -11,7 +11,7 @@ export default function HandwashOrderPage() {
   return (
     <main>
       <PageHero
-        src="https://picsum.photos/seed/handwash-order/1920/800"
+        src="/Hand%20Wash%20Station_new%20/394A0519.jpg"
         alt="iWoodz Creation — Handwash Station"
       />
       <section className="bg-linen py-20 px-6">

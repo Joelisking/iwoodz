@@ -58,7 +58,7 @@ export function DesignServiceHero() {
             transition: "opacity 1s ease-out 300ms",
           }}
         >
-          Consultation &nbsp;·&nbsp; Concept &nbsp;·&nbsp; Design &nbsp;·&nbsp; Approval
+          Retainer Fee &nbsp;·&nbsp; Concept &nbsp;·&nbsp; Design &nbsp;·&nbsp; Approval
         </p>
       </div>
     </section>

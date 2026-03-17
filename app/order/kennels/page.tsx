@@ -11,8 +11,8 @@ export default function KennelsOrderPage() {
   return (
     <main>
       <PageHero
-        src="https://picsum.photos/seed/kennels-order/1920/800"
-        alt="iWoodz Creation — Dog Kennels"
+        src="/Kennel_new/ba7aab6e-8226-4391-b101-791a51bf3112%202.JPG"
+        alt="iWoodz Creation — Dog Kennel"
       />
       <section className="bg-linen py-20 px-6">
         <div className="max-w-2xl mx-auto">

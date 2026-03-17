@@ -6,18 +6,18 @@ const details = [
   {
     icon: MapPin,
     label: "Location",
-    lines: ["Accra, Ghana"],
+    lines: ["Adjiringanor, East Legon", "Accra, Ghana"],
   },
   {
     icon: Clock,
     label: "Opening Hours",
-    lines: ["Monday – Saturday, 8am – 5pm"],
+    lines: ["Monday – Saturday, 8:30am – 5pm"],
   },
   {
     icon: Phone,
     label: "Call Ahead",
-    lines: ["+233 (0) 00 000 0000"],
-    href: "tel:+233000000000",
+    lines: ["+233 243 51 9595", "+233 200 997 333"],
+    href: "tel:+233243519595",
   },
 ];
 
