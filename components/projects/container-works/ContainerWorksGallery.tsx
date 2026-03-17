@@ -40,19 +40,19 @@ export function ContainerWorksGallery() {
               className="w-full h-64 lg:h-[420px] object-cover transition-transform duration-1000 group-hover:scale-[1.02]"
             />
           </div>
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1 lg:h-[420px]">
             <div className="overflow-hidden group flex-1">
               <img
                 src="/New%20Batch%20/IMG_0888.jpg"
                 alt="Container home exterior"
-                className="w-full h-48 lg:h-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
               />
             </div>
             <div className="overflow-hidden group flex-1">
               <img
                 src="/New%20Batch%20/IMG_0812.jpg"
                 alt="Container home studio interior"
-                className="w-full h-48 lg:h-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
               />
             </div>
           </div>

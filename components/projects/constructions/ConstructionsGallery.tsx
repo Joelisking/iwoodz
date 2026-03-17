@@ -45,18 +45,6 @@ export function ConstructionsGallery() {
         </div>
       </div>
 
-      {/* Three-image gallery strip */}
-      <div className="grid grid-cols-3 gap-1 mt-1">
-        {["/villa%20d_tuger/DJI_0217.JPG", "/villa%20d_tuger/IMG_2921.JPG", "/villa%20d_tuger/IMG_2920.JPG"].map((src) => (
-          <div key={src} className="overflow-hidden group">
-            <img
-              src={src}
-              alt="iWoodz construction project"
-              className="w-full aspect-4/3 object-cover transition-transform duration-700 group-hover:scale-[1.04]"
-            />
-          </div>
-        ))}
-      </div>
     </section>
   );
 }
