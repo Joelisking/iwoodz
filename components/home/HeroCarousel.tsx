@@ -6,10 +6,10 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 // Replace these with real asset paths when available
 const SLIDES = [
-  { id: 1, src: "https://picsum.photos/seed/woodkitchen1/1920/1080" },
-  { id: 2, src: "https://picsum.photos/seed/woodcontainer2/1920/1080" },
-  { id: 3, src: "https://picsum.photos/seed/woodcraft3/1920/1080" },
-  { id: 4, src: "https://picsum.photos/seed/woodinterior4/1920/1080" },
+  { id: 1, src: "/villa%20d_tuger/DJI_0225.JPG" },
+  { id: 2, src: "/Pergola/RAF_1376.jpg" },
+  { id: 3, src: "/Pergola/RAF_1412.jpg" },
+  { id: 4, src: "/villa%20d_tuger/IMG_2917.JPG" },
 ];
 
 const N = SLIDES.length;

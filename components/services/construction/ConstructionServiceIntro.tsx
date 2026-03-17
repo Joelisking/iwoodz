@@ -18,8 +18,8 @@ export function ConstructionServiceIntro() {
           {/* Left: tall image */}
           <div className="w-full lg:w-[55%] shrink-0 overflow-hidden group mb-10 lg:mb-0">
             <img
-              src="https://picsum.photos/seed/construction-service-intro/900/800"
-              alt="iWoodz construction service — replace with real photo"
+              src="/villa%20d_tuger/DJI_0226.JPG"
+              alt="Villa D'Tuger aerial construction view"
               className="w-full h-72 lg:h-[580px] object-cover transition-transform duration-1000 group-hover:scale-[1.02]"
             />
           </div>

@@ -3,11 +3,11 @@ import { Button } from "@/components/ui/button";
 // Replace with real assets
 const wideProjects = [
   {
-    src: "https://picsum.photos/seed/contact-container/1200/675",
+    src: "/New%20Batch%20/IMG_0884.jpg",
     label: "EXPLORE CONTAINER WORKS",
   },
   {
-    src: "https://picsum.photos/seed/contact-interiors/1200/675",
+    src: "/New%20Batch%20/IMG_0823.jpg",
     label: "EXPLORE INTERIORS",
   },
 ];
@@ -18,11 +18,11 @@ const gridProjects = [
     label: "EXPLORE DOG KENNELS",
   },
   {
-    src: "https://picsum.photos/seed/contact-constructions/600/450",
+    src: "/villa%20d_tuger/DJI_0226.JPG",
     label: "EXPLORE CONSTRUCTIONS",
   },
   {
-    src: "https://picsum.photos/seed/contact-showrooms/600/450",
+    src: "/New%20Batch%20/IMG_0826.jpg",
     label: "EXPLORE SHOWROOMS",
   },
 ];

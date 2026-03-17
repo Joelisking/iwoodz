@@ -9,9 +9,9 @@ export interface InspirationCard {
 }
 
 const DEFAULT_CARDS: InspirationCard[] = [
-  { src: "https://picsum.photos/seed/insp-projects/800/1000", label: "OUR PROJECTS" },
-  { src: "https://picsum.photos/seed/insp-details/800/1000", label: "OUR WOOD WORKS" },
-  { src: "https://picsum.photos/seed/insp-services/800/1000", label: "OUR SERVICES" },
+  { src: "/villa%20d_tuger/DJI_0214.JPG", label: "OUR PROJECTS" },
+  { src: "/wardrope/IMG_5283.JPG", label: "OUR WOOD WORKS" },
+  { src: "/Pergola/IMG_4850.JPEG", label: "OUR SERVICES" },
 ];
 
 interface InspirationGridProps {

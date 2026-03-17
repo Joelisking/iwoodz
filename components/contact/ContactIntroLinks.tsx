@@ -3,19 +3,19 @@ import { Button } from "@/components/ui/button";
 
 const quickLinks = [
   {
-    src: "https://picsum.photos/seed/contact-brochure/600/450",
+    src: "/Kitchen/RAF_1434.jpg",
     alt: "Request a Brochure",
     label: "REQUEST A BROCHURE",
     href: "/brochure",
   },
   {
-    src: "https://picsum.photos/seed/contact-consultation/600/450",
+    src: "/New%20Batch%20/IMG_0841.jpg",
     alt: "Design Consultation",
     label: "ARRANGE A DESIGN CONSULTATION",
     href: "/design-consultation",
   },
   {
-    src: "https://picsum.photos/seed/contact-showroom/600/450",
+    src: "/Pergola/RAF_1412.jpg",
     alt: "Visit a Showroom",
     label: "VISIT A SHOWROOM",
     href: "/showroom",

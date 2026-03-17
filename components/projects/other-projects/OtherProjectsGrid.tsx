@@ -3,34 +3,34 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    seed: "other-proj-1",
+    src: "/Pergola/IMG_4850.JPEG",
     title: "Garden Pavilion",
     category: "Outdoor Structures",
     description: "A timber-framed garden pavilion with cedar cladding, built-in bench seating, and a planted living roof.",
   },
   {
-    seed: "other-proj-2",
+    src: "/Pergola/RAF_1412.jpg",
     title: "Outdoor Bar & Kitchen",
     category: "Entertainment Spaces",
     description: "A fully fitted outdoor kitchen and bar, weatherproofed with tropical hardwood and integrated appliances.",
   },
   {
-    seed: "other-proj-3",
-    title: "Statement Staircase",
+    src: "/cabinet/IMG_5347.JPG",
+    title: "Statement Console",
     category: "Bespoke Joinery",
-    description: "A floating walnut staircase with open risers and glass balustrade — the centrepiece of a contemporary home.",
+    description: "A solid wood console table with natural live-edge grain — a one-of-a-kind centrepiece crafted for a contemporary home.",
   },
   {
-    seed: "other-proj-4",
-    title: "Retail Display System",
-    category: "Commercial",
-    description: "A fully modular, reconfigurable display system for a boutique fashion house — engineered for flexibility.",
+    src: "/Pergola/IMG_2944.JPEG",
+    title: "Carport Pergola",
+    category: "Outdoor Structures",
+    description: "A cantilevered wood pergola canopy with tensile fabric — providing shade and style over a residential driveway.",
   },
   {
-    seed: "other-proj-5",
-    title: "Children's Play Structure",
-    category: "Custom Commission",
-    description: "A multi-level play structure with climbing wall, slide, and sandpit surround — hand-built from untreated hardwood.",
+    src: "/Pergola/RAF_1376.jpg",
+    title: "Rooftop Bar",
+    category: "Entertainment Spaces",
+    description: "A rooftop timber bar and kiosk structure with full kitchen fit-out — designed for entertaining with style.",
   },
 ];
 
@@ -75,8 +75,8 @@ export function OtherProjectsGrid() {
         {/* Wide project image */}
         <div className="md:col-span-2 overflow-hidden group">
           <img
-            src={`https://picsum.photos/seed/${projects[0].seed}/1000/600`}
-            alt={`${projects[0].title} — replace with real photo`}
+            src={projects[0].src}
+            alt={projects[0].title}
             className="w-full h-64 md:h-full object-cover transition-transform duration-1000 group-hover:scale-[1.03]"
           />
         </div>
@@ -84,11 +84,11 @@ export function OtherProjectsGrid() {
 
       {/* Row 2: three equal images with caption on hover-feel */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-px mt-px">
-        {projects.slice(1, 4).map(({ seed, title, category, description }) => (
-          <div key={seed} className="group relative overflow-hidden">
+        {projects.slice(1, 4).map(({ src, title, category, description }) => (
+          <div key={title} className="group relative overflow-hidden">
             <img
-              src={`https://picsum.photos/seed/${seed}/600/500`}
-              alt={`${title} — replace with real photo`}
+              src={src}
+              alt={title}
               className="w-full h-64 md:h-72 object-cover transition-transform duration-700 group-hover:scale-[1.04]"
             />
             {/* Metadata strip below image */}
@@ -109,8 +109,8 @@ export function OtherProjectsGrid() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-px mt-px mb-0">
         <div className="md:col-span-2 overflow-hidden group">
           <img
-            src={`https://picsum.photos/seed/${projects[4].seed}/1000/500`}
-            alt={`${projects[4].title} — replace with real photo`}
+            src={projects[4].src}
+            alt={projects[4].title}
             className="w-full h-64 md:h-80 object-cover transition-transform duration-1000 group-hover:scale-[1.03]"
           />
         </div>

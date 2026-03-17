@@ -54,15 +54,6 @@ export function InstallationServiceIntro() {
         </div>
       </div>
 
-      {/* Full-bleed image */}
-      <div className="overflow-hidden group">
-        <img
-          src="https://picsum.photos/seed/installation-intro/1920/800"
-          alt="iWoodz installation in progress — replace with real photo"
-          className="w-full h-[45vh] md:h-[58vh] object-cover transition-transform duration-1000 group-hover:scale-[1.02]"
-        />
-      </div>
-
       {/* Stats strip */}
       <div className="border-t border-ink/8">
         <div className="max-w-7xl mx-auto px-8 grid grid-cols-3">

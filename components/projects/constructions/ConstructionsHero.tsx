@@ -14,8 +14,8 @@ export function ConstructionsHero() {
     <section className="relative h-[calc(100vh-100px)] w-full overflow-hidden flex items-center justify-center">
       {/* Background image — replace with real construction photo */}
       <img
-        src="https://picsum.photos/seed/constructions-hero/1920/1080"
-        alt="iWoodz constructions — replace with real photo"
+        src="/villa%20d_tuger/DJI_0225.JPG"
+        alt="iWoodz constructions — Villa D'Tuger aerial view"
         className="absolute inset-0 w-full h-full object-cover"
       />
       <div className="absolute inset-0 bg-ink/58" />

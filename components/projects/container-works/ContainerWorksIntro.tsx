@@ -18,8 +18,8 @@ export function ContainerWorksIntro() {
           {/* Tall left image */}
           <div className="lg:col-span-3 overflow-hidden group">
             <img
-              src="https://picsum.photos/seed/container-intro-left/900/700"
-              alt="Container conversion exterior — replace with real photo"
+              src="/villa%20d_tuger/IMG_2917.JPG"
+              alt="Villa D'Tuger wood-clad exterior"
               className="w-full h-64 lg:h-[480px] object-cover transition-transform duration-1000 group-hover:scale-[1.02]"
             />
           </div>
@@ -28,8 +28,8 @@ export function ContainerWorksIntro() {
           <div className="lg:col-span-2 flex flex-col gap-4">
             <div className="overflow-hidden group flex-1">
               <img
-                src="https://picsum.photos/seed/container-intro-right/600/500"
-                alt="Container interior fitout — replace with real photo"
+                src="/New%20Batch%20/IMG_0890.jpg"
+                alt="Container home wood door detail"
                 className="w-full h-52 lg:h-full object-cover transition-transform duration-1000 group-hover:scale-[1.02]"
               />
             </div>

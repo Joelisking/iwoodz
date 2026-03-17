@@ -14,8 +14,8 @@ export function ShowroomHero() {
     <section className="relative h-[calc(100vh-100px)] w-full overflow-hidden">
       {/* Background image — replace src with real showroom photo */}
       <img
-        src="https://picsum.photos/seed/showroom-hero/1920/1080"
-        alt="iWoodz Creation Showroom — replace with real showroom photo"
+        src="/showroom.jpg"
+        alt="iWoodz Creation Showroom — bespoke furniture display"
         className="absolute inset-0 w-full h-full object-cover"
       />
 

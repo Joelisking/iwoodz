@@ -48,8 +48,8 @@ export function DesignServiceIncludes() {
           {/* Right: image */}
           <div className="overflow-hidden group">
             <img
-              src="https://picsum.photos/seed/design-includes/700/900"
-              alt="iWoodz design process — replace with real photo"
+              src="/New%20Batch%20/IMG_0816.jpg"
+              alt="iWoodz open plan living and kitchen"
               className="w-full lg:h-[580px] object-cover transition-transform duration-1000 group-hover:scale-[1.02]"
             />
           </div>

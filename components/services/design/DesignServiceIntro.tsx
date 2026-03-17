@@ -32,14 +32,6 @@ export function DesignServiceIntro() {
         </p>
       </div>
 
-      {/* Full-bleed image */}
-      <div className="overflow-hidden group">
-        <img
-          src="https://picsum.photos/seed/design-intro/1920/800"
-          alt="iWoodz design consultation — replace with real photo"
-          className="w-full h-[45vh] md:h-[60vh] object-cover transition-transform duration-1000 group-hover:scale-[1.02]"
-        />
-      </div>
     </section>
   );
 }

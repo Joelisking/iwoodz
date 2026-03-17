@@ -2,14 +2,14 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 const wideProjects = [
-  { seed: "why-project-wide-1", label: "EXPLORE INTERIORS" },
-  { seed: "why-project-wide-2", label: "EXPLORE CONTAINER WORKS" },
+  { src: "/Kitchen/RAF_1434.jpg", label: "EXPLORE INTERIORS" },
+  { src: "/villa%20d_tuger/DJI_0217.JPG", label: "EXPLORE CONTAINER WORKS" },
 ];
 
 const smallProjects = [
-  { seed: "why-project-sm-1", label: "EXPLORE DOG KENNELS" },
-  { seed: "why-project-sm-2", label: "EXPLORE CONSTRUCTIONS" },
-  { seed: "why-project-sm-3", label: "EXPLORE OTHER PROJECTS" },
+  { src: "https://picsum.photos/seed/dog-kennels/600/400", label: "EXPLORE DOG KENNELS" },
+  { src: "/villa%20d_tuger/DJI_0214.JPG", label: "EXPLORE CONSTRUCTIONS" },
+  { src: "/Pergola/IMG_4850.JPEG", label: "EXPLORE OTHER PROJECTS" },
 ];
 
 const btnClass =
@@ -47,10 +47,10 @@ export function WhyProjectsSection() {
 
       {/* 2-col wide images */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-        {wideProjects.map(({ seed, label }) => (
-          <div key={seed}>
+        {wideProjects.map(({ src, label }) => (
+          <div key={label}>
             <img
-              src={`https://picsum.photos/seed/${seed}/900/540`}
+              src={src}
               alt={label}
               className="w-full aspect-video object-cover"
             />
@@ -63,10 +63,10 @@ export function WhyProjectsSection() {
 
       {/* 3-col images */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
-        {smallProjects.map(({ seed, label }) => (
-          <div key={seed}>
+        {smallProjects.map(({ src, label }) => (
+          <div key={label}>
             <img
-              src={`https://picsum.photos/seed/${seed}/600/400`}
+              src={src}
               alt={label}
               className="w-full aspect-4/3 object-cover"
             />

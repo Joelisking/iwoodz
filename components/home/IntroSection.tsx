@@ -3,13 +3,13 @@ import { Button } from "@/components/ui/button";
 // Replace with real asset paths when available
 const introImages = [
   {
-    src: "https://picsum.photos/seed/kitchen-portrait/600/800",
+    src: "/Kitchen/RAF_1434.jpg",
     title: "Kitchens",
     description:
       "Custom-designed kitchens built to your exact specification — from layout planning to the final finish.",
   },
   {
-    src: "https://picsum.photos/seed/living-portrait/600/800",
+    src: "/New%20Batch%20/IMG_0835.jpg",
     title: "Living Spaces",
     description:
       "Wood joinery and fitted furniture that transforms any living area into something truly yours.",

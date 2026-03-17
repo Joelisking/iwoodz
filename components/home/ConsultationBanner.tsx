@@ -6,8 +6,8 @@ export function ConsultationBanner() {
     <section className="relative h-[55vh] min-h-[400px] w-full overflow-hidden">
       {/* Background image — replace with real workshop/wood-grain asset */}
       <img
-        src="https://picsum.photos/seed/woodworkshop/1920/800"
-        alt="Workshop"
+        src="/New%20Batch%20/IMG_0879.jpg"
+        alt="iWoodz container works project"
         className="absolute inset-0 w-full h-full object-cover"
       />
       {/* Dark overlay */}

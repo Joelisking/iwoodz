@@ -3,19 +3,19 @@ import { Button } from "@/components/ui/button";
 // Replace with real asset paths when available
 const cards = [
   {
-    src: "https://picsum.photos/seed/design-service/600/400",
+    src: "/Kitchen/RAF_1434.jpg",
     title: "Our Design Service",
     description:
       "Every build starts with a design process. We listen, sketch, and refine until the vision is exactly right.",
   },
   {
-    src: "https://picsum.photos/seed/craftsmanship/600/400",
+    src: "/wardrope/IMG_5283.JPG",
     title: "Expert Craftsmanship",
     description:
       "Our skilled craftsmen bring decades of woodworking expertise to every joint, panel, and finish.",
   },
   {
-    src: "https://picsum.photos/seed/bespoke-details/600/400",
+    src: "/cabinet/IMG_5347.JPG",
     title: "Wood Works",
     description:
       "From custom hardware to hand-applied finishes, every detail is considered and crafted with care.",

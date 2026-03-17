@@ -1,6 +1,5 @@
 import { ShowroomHero } from "@/components/showroom/ShowroomHero";
 import { ShowroomInfo } from "@/components/showroom/ShowroomInfo";
-import { ShowroomGallery } from "@/components/showroom/ShowroomGallery";
 import { ShowroomMap } from "@/components/showroom/ShowroomMap";
 import { ShowroomVisitCTA } from "@/components/showroom/ShowroomVisitCTA";
 
@@ -15,7 +14,6 @@ export default function ShowroomPage() {
     <main>
       <ShowroomHero />
       <ShowroomInfo />
-      <ShowroomGallery />
       <ShowroomMap />
       <ShowroomVisitCTA />
     </main>

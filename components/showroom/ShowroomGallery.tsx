@@ -4,9 +4,9 @@ import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const galleryItems = [
-  { seed: "showroom-gallery-1" },
-  { seed: "showroom-gallery-2" },
-  { seed: "showroom-gallery-3" },
+  { src: "/New%20Batch%20/IMG_0831.jpg" },
+  { src: "/wardrope/IMG_5292.JPG" },
+  { src: "/Pergola/RAF_1412.jpg" },
 ];
 
 const N = galleryItems.length;
@@ -41,11 +41,11 @@ export function ShowroomGallery() {
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${current * 100}%)` }}
         >
-          {galleryItems.map(({ seed }) => (
-            <div key={seed} className="w-full shrink-0">
+          {galleryItems.map(({ src }) => (
+            <div key={src} className="w-full shrink-0">
               <img
-                src={`https://picsum.photos/seed/${seed}/1600/900`}
-                alt="iWoodz Creation showroom — replace with real photo"
+                src={src}
+                alt="iWoodz Creation showroom"
                 className="w-full aspect-video object-cover"
               />
             </div>

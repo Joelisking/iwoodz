@@ -14,8 +14,8 @@ export function InteriorsHero() {
     <section className="relative h-[calc(100vh-100px)] w-full overflow-hidden">
       {/* Background image — replace with real interiors photo */}
       <img
-        src="https://picsum.photos/seed/interiors-hero/1920/1080"
-        alt="iWoodz Creation bespoke interiors — replace with real photo"
+        src="/New%20Batch%20/IMG_0831.jpg"
+        alt="iWoodz Creation bespoke interior — bedroom and living space"
         className="absolute inset-0 w-full h-full object-cover"
       />
       <div className="absolute inset-0 bg-linear-to-t from-ink/85 via-ink/25 to-transparent" />

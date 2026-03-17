@@ -2,9 +2,9 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 const galleryImages = [
-  { seed: "wardrobe-1", alt: "Fitted wardrobe interior" },
-  { seed: "wardrobe-2", alt: "Bespoke storage detail" },
-  { seed: "wardrobe-3", alt: "Wardrobe handles and finish" },
+  { src: "/wardrope/IMG_5283.JPG", alt: "Fitted wardrobe sliding doors" },
+  { src: "/wardrope/IMG_5292.JPG", alt: "Wardrobe interior shelving" },
+  { src: "/wardrope/IMG_5308.JPG", alt: "Wardrobe overhead detail" },
 ];
 
 export function WardobesSection() {
@@ -24,8 +24,8 @@ export function WardobesSection() {
           {/* Wide feature image */}
           <div className="flex-1 mb-10 lg:mb-0">
             <img
-              src="https://picsum.photos/seed/wardrobe-feature/900/700"
-              alt="iWoodz fitted wardrobe — replace with real photo"
+              src="/wardrope/IMG_5292.JPG"
+              alt="iWoodz fitted wardrobe with shelving"
               className="w-full aspect-4/3 lg:aspect-auto lg:h-[520px] object-cover"
             />
           </div>
@@ -58,11 +58,11 @@ export function WardobesSection() {
 
         {/* 3-image gallery strip */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-1">
-          {galleryImages.map(({ seed, alt }) => (
-            <div key={seed} className="overflow-hidden group">
+          {galleryImages.map(({ src, alt }) => (
+            <div key={src} className="overflow-hidden group">
               <img
-                src={`https://picsum.photos/seed/${seed}/700/520`}
-                alt={`${alt} — replace with real photo`}
+                src={src}
+                alt={alt}
                 className="w-full aspect-4/3 object-cover transition-transform duration-700 group-hover:scale-[1.04]"
               />
             </div>

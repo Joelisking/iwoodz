@@ -52,8 +52,8 @@ export function ConstructionsIntro() {
       {/* Full-bleed edge-to-edge image — no side padding */}
       <div className="overflow-hidden group">
         <img
-          src="https://picsum.photos/seed/constructions-fullbleed/1920/900"
-          alt="iWoodz construction project — replace with real photo"
+          src="/villa%20d_tuger/DJI_0214.JPG"
+          alt="Villa D'Tuger construction — aerial overview"
           className="w-full h-[50vh] md:h-[65vh] object-cover transition-transform duration-1000 group-hover:scale-[1.02]"
         />
       </div>

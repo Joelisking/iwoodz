@@ -50,8 +50,8 @@ export function ConstructionsCapabilities() {
           {/* Right: tall image */}
           <div className="overflow-hidden group">
             <img
-              src="https://picsum.photos/seed/constructions-cap/700/900"
-              alt="iWoodz construction — replace with real photo"
+              src="/villa%20d_tuger/IMG_2921.JPG"
+              alt="Villa D'Tuger wood-clad exterior"
               className="w-full lg:h-[580px] object-cover transition-transform duration-1000 group-hover:scale-[1.02]"
             />
           </div>

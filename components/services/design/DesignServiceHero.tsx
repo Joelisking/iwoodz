@@ -14,8 +14,8 @@ export function DesignServiceHero() {
     <section className="relative h-[calc(100vh-100px)] w-full overflow-hidden">
       {/* Full-bleed image */}
       <img
-        src="https://picsum.photos/seed/design-service-hero/1920/1080"
-        alt="iWoodz design service — replace with real photo"
+        src="/wardrope/IMG_5283.JPG"
+        alt="iWoodz bespoke fitted wardrobe"
         className="absolute inset-0 w-full h-full object-cover"
       />
 

@@ -22,8 +22,8 @@ export default function WhyIwoodzPage() {
         eyebrow="Passionate & Purposeful"
         heading="Crafted with Heart"
         body="As a dedicated team in the heart of Accra, we understand the importance of creating spaces that feel truly yours. An iWoodz piece becomes a centre of your everyday life — where your family gathers, connects, and creates lasting memories."
-        imageSrc="https://picsum.photos/seed/why-feature-1/1000/700"
-        imageAlt="iWoodz Creation bespoke interior — replace with real photo"
+        imageSrc="/Kitchen/RAF_1422.jpg"
+        imageAlt="iWoodz Creation bespoke kitchen interior"
       />
 
       <WhyFeatureBlock
@@ -32,8 +32,8 @@ export default function WhyIwoodzPage() {
         body="Our friendly team of experienced designers prioritises your ideas and how you want to use your space, working closely with you to create high-quality, beautifully considered results that exceed expectations."
         buttonLabel="Book a Design Consultation"
         buttonHref="/design-consultation"
-        imageSrc="https://picsum.photos/seed/why-feature-2/1000/700"
-        imageAlt="iWoodz design consultation — replace with real photo"
+        imageSrc="/wardrope/IMG_5292.JPG"
+        imageAlt="iWoodz fitted wardrobe with shelving"
         imageLeft
       />
 
@@ -43,8 +43,8 @@ export default function WhyIwoodzPage() {
         body="From contemporary interiors to custom container works and ambitious constructions — every project is designed entirely around your lifestyle, your space, and your aspirations. No two projects are ever the same."
         buttonLabel="Explore All Projects"
         buttonHref="#"
-        imageSrc="https://picsum.photos/seed/why-feature-3/1000/700"
-        imageAlt="iWoodz bespoke design — replace with real photo"
+        imageSrc="/Pergola/RAF_1412.jpg"
+        imageAlt="iWoodz rooftop bar and outdoor structure"
       />
 
       <WhyPartners />
@@ -55,8 +55,8 @@ export default function WhyIwoodzPage() {
         body="iWoodz redefines quality through expert craftsmanship. With years of experience and meticulous attention to detail, we combine the finest materials with precision workmanship to create spaces of enduring quality, beauty, and functionality."
         buttonLabel="Explore Our Services"
         buttonHref="#"
-        imageSrc="https://picsum.photos/seed/why-feature-4/1000/700"
-        imageAlt="iWoodz expert craftsmanship — replace with real photo"
+        imageSrc="/cabinet/IMG_5347.JPG"
+        imageAlt="iWoodz solid wood bench craftsmanship"
         imageLeft
       />
 

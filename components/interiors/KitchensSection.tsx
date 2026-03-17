@@ -2,9 +2,9 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 const galleryImages = [
-  { seed: "kitchen-gallery-1", alt: "Bespoke kitchen detail" },
-  { seed: "kitchen-gallery-2", alt: "Kitchen island" },
-  { seed: "kitchen-gallery-3", alt: "Kitchen cabinetry" },
+  { src: "/Kitchen/RAF_1434.jpg", alt: "Bespoke iWoodz kitchen" },
+  { src: "/New%20Batch%20/IMG_0820.jpg", alt: "Kitchen cabinetry and marble backsplash" },
+  { src: "/New%20Batch%20/IMG_0825.jpg", alt: "Kitchen cabinets detail" },
 ];
 
 export function KitchensSection() {
@@ -48,8 +48,8 @@ export function KitchensSection() {
           {/* Tall hero image */}
           <div className="flex-1">
             <img
-              src="https://picsum.photos/seed/kitchen-feature/900/700"
-              alt="Bespoke iWoodz kitchen — replace with real photo"
+              src="/Kitchen/RAF_1422.jpg"
+              alt="Bespoke iWoodz kitchen"
               className="w-full aspect-4/3 lg:aspect-auto lg:h-[520px] object-cover"
             />
           </div>
@@ -57,11 +57,11 @@ export function KitchensSection() {
 
         {/* 3-image gallery row */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-1">
-          {galleryImages.map(({ seed, alt }) => (
-            <div key={seed} className="overflow-hidden group">
+          {galleryImages.map(({ src, alt }) => (
+            <div key={src} className="overflow-hidden group">
               <img
-                src={`https://picsum.photos/seed/${seed}/700/500`}
-                alt={`${alt} — replace with real photo`}
+                src={src}
+                alt={alt}
                 className="w-full aspect-4/3 object-cover transition-transform duration-700 group-hover:scale-[1.04]"
               />
             </div>

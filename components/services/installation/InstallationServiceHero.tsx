@@ -14,8 +14,8 @@ export function InstallationServiceHero() {
     <section className="relative h-[calc(100vh-100px)] w-full overflow-hidden">
       {/* Full-bleed image */}
       <img
-        src="https://picsum.photos/seed/installation-hero/1920/1080"
-        alt="iWoodz installation service — replace with real photo"
+        src="/New%20Batch%20/IMG_0870.jpg"
+        alt="iWoodz precision installation finish"
         className="absolute inset-0 w-full h-full object-cover"
       />
       {/* Gradient flows top-left to bottom-right — opposite of Interiors */}

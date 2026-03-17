@@ -62,8 +62,8 @@ export function ContainerWorksHero() {
         }}
       >
         <img
-          src="https://picsum.photos/seed/container-hero/1200/1080"
-          alt="iWoodz container works — replace with real photo"
+          src="/New%20Batch%20/IMG_0879.jpg"
+          alt="iWoodz container works exterior"
           className="absolute inset-0 w-full h-full object-cover"
         />
       </div>

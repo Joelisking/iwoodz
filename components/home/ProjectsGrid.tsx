@@ -4,19 +4,19 @@ import { Separator } from "@/components/ui/separator";
 // Replace with real asset paths when available
 const mainProjects = [
   {
-    src: "https://picsum.photos/seed/container-works/600/750",
+    src: "/New%20Batch%20/IMG_0883.jpg",
     title: "Container Works",
     description:
       "Innovative container conversions — from layout planning and windows to full interior finishing.",
   },
   {
-    src: "https://picsum.photos/seed/constructions/600/750",
+    src: "/villa%20d_tuger/DJI_0214.JPG",
     title: "Constructions",
     description:
       "Full-scale construction projects including villas, outbuildings, and custom structures.",
   },
   {
-    src: "https://picsum.photos/seed/interiors-grid/600/750",
+    src: "/wardrope/IMG_5292.JPG",
     title: "Interiors",
     description:
       "Bespoke fitted kitchens, living spaces, and wardrobes crafted with precision and care.",
@@ -31,7 +31,7 @@ const secondaryProjects = [
       "Single and double kennels built to the highest standard — comfortable and durable.",
   },
   {
-    src: "https://picsum.photos/seed/other-projects/600/750",
+    src: "/Pergola/IMG_4850.JPEG",
     title: "Other Projects",
     description:
       "Pergolas, hand-wash stations, and more — no project is too unique.",

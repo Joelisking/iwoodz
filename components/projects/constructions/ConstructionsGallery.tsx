@@ -17,8 +17,8 @@ export function ConstructionsGallery() {
       {/* Full-width feature image with text overlay on dark panel */}
       <div className="relative overflow-hidden group">
         <img
-          src="https://picsum.photos/seed/constructions-feature/1920/800"
-          alt="iWoodz construction project — replace with real photo"
+          src="/villa%20d_tuger/IMG_2917.JPG"
+          alt="Villa D'Tuger — wood-clad residential build"
           className="w-full h-[55vh] md:h-[65vh] object-cover transition-transform duration-1000 group-hover:scale-[1.02]"
         />
         {/* Dark overlay panel — left aligned */}
@@ -47,11 +47,11 @@ export function ConstructionsGallery() {
 
       {/* Three-image gallery strip */}
       <div className="grid grid-cols-3 gap-1 mt-1">
-        {["constr-gal-a", "constr-gal-b", "constr-gal-c"].map((seed) => (
-          <div key={seed} className="overflow-hidden group">
+        {["/villa%20d_tuger/DJI_0217.JPG", "/villa%20d_tuger/IMG_2921.JPG", "/villa%20d_tuger/IMG_2920.JPG"].map((src) => (
+          <div key={src} className="overflow-hidden group">
             <img
-              src={`https://picsum.photos/seed/${seed}/700/450`}
-              alt="Construction detail — replace with real photo"
+              src={src}
+              alt="iWoodz construction project"
               className="w-full aspect-4/3 object-cover transition-transform duration-700 group-hover:scale-[1.04]"
             />
           </div>

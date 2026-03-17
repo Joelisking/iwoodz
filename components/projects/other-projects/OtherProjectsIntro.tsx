@@ -1,8 +1,8 @@
 const imageStrip = [
-  { seed: "other-strip-1", alt: "Garden pavilion" },
-  { seed: "other-strip-2", alt: "Outdoor bar" },
-  { seed: "other-strip-3", alt: "Custom staircase" },
-  { seed: "other-strip-4", alt: "Statement furniture" },
+  { src: "/Pergola/IMG_4850.JPEG", alt: "Garden pavilion pergola" },
+  { src: "/Pergola/RAF_1412.jpg", alt: "Outdoor bar and kitchen" },
+  { src: "/Pergola/IMG_2944.JPEG", alt: "Carport pergola structure" },
+  { src: "/cabinet/IMG_5347.JPG", alt: "Statement wood furniture" },
 ];
 
 export function OtherProjectsIntro() {
@@ -41,11 +41,11 @@ export function OtherProjectsIntro() {
 
       {/* Horizontal image strip — no padding, bleeds to edge */}
       <div className="grid grid-cols-4 gap-px">
-        {imageStrip.map(({ seed, alt }) => (
-          <div key={seed} className="overflow-hidden group">
+        {imageStrip.map(({ src, alt }) => (
+          <div key={src} className="overflow-hidden group">
             <img
-              src={`https://picsum.photos/seed/${seed}/500/600`}
-              alt={`${alt} — replace with real photo`}
+              src={src}
+              alt={alt}
               className="w-full h-52 md:h-72 object-cover transition-transform duration-700 group-hover:scale-[1.05]"
             />
           </div>

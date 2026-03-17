@@ -16,8 +16,8 @@ export function LivingSpacesSection() {
         {/* Full-width lead image */}
         <div className="overflow-hidden group mb-6">
           <img
-            src="https://picsum.photos/seed/living-lead/1400/700"
-            alt="iWoodz bespoke living space — replace with real photo"
+            src="/New%20Batch%20/IMG_0812.jpg"
+            alt="iWoodz bespoke living space interior"
             className="w-full aspect-video object-cover transition-transform duration-1000 group-hover:scale-[1.02]"
           />
         </div>
@@ -53,15 +53,15 @@ export function LivingSpacesSection() {
           <div className="grid grid-cols-2 gap-2">
             <div className="overflow-hidden group">
               <img
-                src="https://picsum.photos/seed/living-detail-1/500/600"
-                alt="Living space detail — replace with real photo"
+                src="/New%20Batch%20/IMG_0816.jpg"
+                alt="Living space with wood details"
                 className="w-full aspect-3/4 object-cover transition-transform duration-700 group-hover:scale-[1.04]"
               />
             </div>
             <div className="overflow-hidden group mt-8">
               <img
-                src="https://picsum.photos/seed/living-detail-2/500/600"
-                alt="Living space shelving — replace with real photo"
+                src="/villa%20d_tuger/IMG_2932.JPG"
+                alt="Villa D'Tuger living room interior"
                 className="w-full aspect-3/4 object-cover transition-transform duration-700 group-hover:scale-[1.04]"
               />
             </div>

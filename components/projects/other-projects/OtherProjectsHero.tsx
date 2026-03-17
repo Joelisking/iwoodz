@@ -14,8 +14,8 @@ export function OtherProjectsHero() {
     <section className="relative h-[calc(100vh-100px)] w-full overflow-hidden">
       {/* Background image — replace with real bespoke project photo */}
       <img
-        src="https://picsum.photos/seed/other-projects-hero/1920/1080"
-        alt="iWoodz bespoke projects — replace with real photo"
+        src="/Pergola/RAF_1376.jpg"
+        alt="iWoodz bespoke rooftop bar project"
         className="absolute inset-0 w-full h-full object-cover"
       />
       <div className="absolute inset-0 bg-ink/55" />

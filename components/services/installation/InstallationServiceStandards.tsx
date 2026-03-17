@@ -24,8 +24,8 @@ export function InstallationServiceStandards() {
           {/* Left: image */}
           <div className="overflow-hidden group order-2 lg:order-1">
             <img
-              src="https://picsum.photos/seed/installation-standards/700/800"
-              alt="iWoodz installation standards — replace with real photo"
+              src="/Kitchen/RAF_1434.jpg"
+              alt="iWoodz precision-fitted kitchen"
               className="w-full lg:h-[540px] object-cover transition-transform duration-1000 group-hover:scale-[1.02]"
             />
           </div>

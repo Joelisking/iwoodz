@@ -112,8 +112,8 @@ export function NavPopover({ type }: NavPopoverProps) {
           <div className="w-44 shrink-0 overflow-hidden">
             {/* Replace with real project image */}
             <img
-              src="https://picsum.photos/seed/nav-projects/300/400"
-              alt="iWoodz Creation projects"
+              src="/Pergola/RAF_1376.jpg"
+              alt="iWoodz Creation — rooftop bar project"
               className="w-full h-full object-cover"
             />
           </div>
