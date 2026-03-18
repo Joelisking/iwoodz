@@ -11,7 +11,7 @@ interface PageHeroProps {
 }
 
 export function PageHero({ src, alt, height = "60vh", showGradient = false, objectPosition = "object-center" }: PageHeroProps) {
-  const heightClass = height === "screen" ? "h-[calc(100vh-100px)]" : "h-[60vh]";
+  const heightClass = height === "screen" ? "h-[calc(100vh-100px)]" : "h-[45vh] sm:h-[55vh] md:h-[60vh]";
 
   return (
     <section className={`relative ${heightClass} w-full overflow-hidden`}>

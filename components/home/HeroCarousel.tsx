@@ -53,54 +53,56 @@ export function HeroCarousel() {
         ))}
       </div>
 
-      {/* Static gradient overlay */}
+      {/* Gradient overlays */}
       <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/25 to-transparent pointer-events-none" />
+      {/* Extra bottom gradient on mobile for text legibility */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent pointer-events-none md:hidden" />
 
       {/* Static text overlay */}
-      <div className="absolute bottom-20 left-8 md:left-16 z-10 max-w-lg">
-        <p className="text-xs uppercase tracking-[0.25em] text-white/70 mb-3">
+      <div className="absolute bottom-16 md:bottom-20 left-6 md:left-16 z-10 max-w-[280px] sm:max-w-sm md:max-w-lg">
+        <p className="text-xs uppercase tracking-[0.25em] text-white/70 mb-2 md:mb-3">
           WOODWORK
         </p>
         <h1
-          className="font-serif text-4xl md:text-6xl text-white font-light leading-tight mb-5"
+          className="font-serif text-4xl md:text-6xl text-white font-light leading-tight mb-3 md:mb-5"
           style={{ fontFamily: "var(--font-cormorant)" }}
         >
           Crafted For
           <br />
           Every Space
         </h1>
-        <p className="text-white/75 text-sm md:text-base max-w-sm mb-8 leading-relaxed">
+        <p className="hidden sm:block text-white/75 text-sm md:text-base max-w-sm mb-5 md:mb-8 leading-relaxed">
           From wood kitchens to container builds, iWoodz Creation brings
           your vision to life.
         </p>
         <Button
           variant="outline"
-          className="border-white text-white bg-transparent hover:bg-white hover:text-ink uppercase tracking-[0.18em] text-xs px-8 h-12"
+          className="border-white text-white bg-transparent hover:bg-white hover:text-ink uppercase tracking-[0.18em] text-xs px-6 md:px-8 h-10 md:h-12"
         >
           EXPLORE OUR PROJECTS
         </Button>
       </div>
 
-      {/* Left arrow */}
+      {/* Left arrow — hidden on mobile (use dots to navigate) */}
       <button
         onClick={prev}
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-white/60 hover:text-white transition-colors p-2"
+        className="hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 z-10 text-white/60 hover:text-white transition-colors p-2"
         aria-label="Previous slide"
       >
         <ChevronLeft size={30} />
       </button>
 
-      {/* Right arrow */}
+      {/* Right arrow — hidden on mobile */}
       <button
         onClick={next}
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-10 text-white/60 hover:text-white transition-colors p-2"
+        className="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 z-10 text-white/60 hover:text-white transition-colors p-2"
         aria-label="Next slide"
       >
         <ChevronRight size={30} />
       </button>
 
       {/* Dot indicators */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex items-center gap-2">
+      <div className="absolute bottom-5 md:bottom-6 left-1/2 -translate-x-1/2 z-10 flex items-center gap-2">
         {SLIDES.map((_, i) => (
           <button
             key={i}

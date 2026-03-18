@@ -18,7 +18,7 @@ const introImages = [
 
 export function IntroSection() {
   return (
-    <section className="bg-linen py-24 px-6">
+    <section className="bg-linen py-14 md:py-24 px-6">
       <div className="max-w-5xl mx-auto">
         {/* Heading block */}
         <div className="text-center mb-16">

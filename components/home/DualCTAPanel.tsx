@@ -6,7 +6,7 @@ export function DualCTAPanel() {
   return (
     <section className="bg-cta-panel py-20 px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12 items-center">
           {/* Left: Brochure */}
           <div className="text-center lg:text-left">
             <p className="text-xs uppercase tracking-[0.25em] text-ink/50 mb-4">
@@ -27,13 +27,13 @@ export function DualCTAPanel() {
             </Button>
           </div>
 
-          {/* Center: Line-art illustration */}
-          <div className="flex items-center justify-center py-4">
+          {/* Center: Line-art illustration — hidden on mobile */}
+          <div className="hidden lg:flex items-center justify-center py-4">
             <KitchenLineArt />
           </div>
 
           {/* Right: Consultation */}
-          <div className="text-center lg:text-right">
+          <div className="text-center sm:text-left lg:text-right">
             <p className="text-xs uppercase tracking-[0.25em] text-ink/50 mb-4">
               DESIGN YOUR SPACE
             </p>
@@ -43,7 +43,7 @@ export function DualCTAPanel() {
             >
               Book A Design Consultation
             </h2>
-            <p className="text-ink/60 text-sm leading-relaxed mb-8 max-w-xs mx-auto lg:ml-auto lg:mr-0">
+            <p className="text-ink/60 text-sm leading-relaxed mb-8 max-w-xs mx-auto sm:mx-0 lg:ml-auto lg:mr-0">
               Our designers visit your site, take measurements, and prepare a
               detailed proposal. A retainer fee applies — deducted from the
               final project cost upon agreement.

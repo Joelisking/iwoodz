@@ -15,27 +15,27 @@ export function ConsultationBanner() {
 
       {/* Content */}
       <div className="relative z-10 h-full flex items-center">
-        <div className="px-8 md:px-16 max-w-2xl">
-          <p className="text-xs uppercase tracking-[0.25em] text-gold mb-4">
+        <div className="px-6 md:px-16 max-w-2xl">
+          <p className="text-xs uppercase tracking-[0.25em] text-gold mb-3 md:mb-4">
             TALK TO AN EXPERT
           </p>
           <h2
-            className="font-serif text-4xl md:text-5xl text-white font-light leading-tight mb-5"
+            className="font-serif text-3xl md:text-5xl text-white font-light leading-tight mb-4 md:mb-5"
             style={{ fontFamily: "var(--font-cormorant)" }}
           >
             Book A Design
             <br />
             Consultation
           </h2>
-          <p className="text-white/65 text-sm leading-relaxed mb-8 max-w-md">
+          <p className="hidden sm:block text-white/65 text-sm leading-relaxed mb-6 md:mb-8 max-w-md">
             Our design team visits your site to understand your vision, take
             measurements, and prepare a detailed proposal. A retainer fee
             applies — deducted in full from the final project cost upon
             agreement.
           </p>
           <Button variant="outline" asChild
-            className="border-white text-white bg-transparent hover:bg-white hover:text-ink uppercase tracking-[0.18em] text-xs px-8 h-12">
-            <Link href="/design-consultation">ARRANGE A DESIGN CONSULTATION</Link>
+            className="border-white text-white bg-transparent hover:bg-white hover:text-ink uppercase tracking-[0.18em] text-xs px-6 md:px-8 h-10 md:h-12">
+            <Link href="/design-consultation">ARRANGE A CONSULTATION</Link>
           </Button>
         </div>
       </div>
